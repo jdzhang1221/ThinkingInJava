@@ -6,8 +6,11 @@
  * into with Tuhu.cn
  */
 package Collection;
+import org.apache.commons.lang3.StringUtils;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -16,6 +19,12 @@ import java.util.Map;
  */
 public class Main {
     public static void main(String[] args) {
+        long start=System.currentTimeMillis();
+       Boolean result= StringUtils.isEmpty(null);
+
+        List<String> list=new ArrayList<String>();
+        System.out.println(list.indexOf(1));
+        System.out.println(result);
        System.out.println("hello world");
     }
 }
